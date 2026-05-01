@@ -1,0 +1,13 @@
+numpy
+torch
+stable-baselines3
+gymnasium
+gymnasium-robotics
+transformations
+minigrid
+tensorboard
+tqdm
+tbparse
+gym-super-mario-bros
+nes-py
+opencv-python
