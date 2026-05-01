@@ -50,13 +50,13 @@ For Mario experiments, the project uses `gym-super-mario-bros` and `nes-py`. If 
 Train PPO on a continuous-control task:
 
 ```bash
-python run-PPO.py --env-id MountainCarContinuous-v0 --total-timesteps 2000000
+python run-PPO.py --env-id MountainCarContinuous-1-1-v1 --total-timesteps 1000000
 ```
 
 Train SASR on a continuous-control task:
 
 ```bash
-python run-SASR.py --env-id MountainCarContinuous-v0 --total-timesteps 2000000
+python run-SASR.py --env-id MountainCarContinuous-1-1-v1 --total-timesteps 1000000
 ```
 
 Train PPO on Super Mario Bros.:
@@ -88,17 +88,3 @@ python eval-PPO-mario.py --model-dir ./ppo-mario/ --exp-name ppo-mario
 ```
 
 Some trained checkpoint files are included in the repository so that selected experiments can be evaluated without retraining from scratch.
-
-## Results
-
-The `plots/`, `paper/`, and `readme-images/` directories contain the generated figures and report artifacts used to summarize the experiments.
-
-![Environment examples](readme-images/environments.png)
-
-![Experiment comparison](readme-images/comparison.svg)
-
-## Notes
-
-- CUDA can be selected with the `--cuda` flag in the training and evaluation scripts.
-- Most scripts expose hyperparameters through command-line arguments; run a script with `--help` to inspect the full option list.
-- Super Mario Bros. experiments use image preprocessing wrappers defined in `SASR/utils.py`.
