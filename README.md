@@ -11,7 +11,7 @@ The code compares several reinforcement learning agents:
 - `SASR-PPO`: PPO augmented with SASR-style reward shaping for sparse-reward settings.
 - `Duel DQN Mario`: a Dueling DQN baseline for the Mario environment.
 
-The project targets sparse-reward exploration problems such as `MountainCarContinuous-v0` and `SuperMarioBros-1-1-v1`.
+The project targets sparse-reward exploration problems such as `MountainCarContinuous-v0` or `SuperMarioBros-1-1-v1`.
 
 ## Repository Structure
 
