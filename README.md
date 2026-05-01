@@ -81,10 +81,10 @@ Evaluate a trained continuous-control SASR checkpoint:
 python eval-SASR.py --env-id MountainCarContinuous-v0 --model-dir ./SASR/ --exp-name sasr
 ```
 
-Evaluate a trained Mario PPO checkpoint:
+Evaluate a trained Mario SASR-PPO checkpoint:
 
 ```bash
-python eval-PPO-mario.py --model-dir ./ppo-mario/ --exp-name ppo-mario
+python eval-PPO-mario.py --model-path ./sasr-ppo-mario/sasr-ppo-ac-sasr-ppo-mario-final-1.pth
 ```
 
 Some trained checkpoint files are included in the repository so that selected experiments can be evaluated without retraining from scratch.
